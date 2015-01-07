@@ -74,7 +74,7 @@ object RNG {
         (list, rng)
       else {
         val (i, nextRng) = rng.nextInt
-        loop(count - 1, nextRng, (i :: list))
+        loop(count - 1, nextRng, i :: list)
       }
     }
     loop(count, rng, List[Int]())
